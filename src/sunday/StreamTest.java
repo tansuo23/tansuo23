@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public class StreamTest {
     public static void main(String[] args) {
-        List<String> s = Arrays.asList("滕建龙", "钟灵石");
+        List<String> s = Arrays.asList("hello", "world");
         s.forEach(System.out::println);
         Byte[] arr = {34, 64, 67, 8, 74, 46};
         Stream<Byte> arr1 = Stream.of(arr);
