@@ -10,11 +10,11 @@ public class HeedCrow {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                System.out.println("龙龙");
+                System.out.println("learing");
             }
         };
         runnable.run();
-        Runnable runnable1 = ()-> System.out.println("腾家龙");
+        Runnable runnable1 = ()-> System.out.println("岭南");
         runnable1.run();
     }
 
