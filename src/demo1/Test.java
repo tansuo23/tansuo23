@@ -14,7 +14,6 @@ public  class Test  {
             int j = 2 *(i + 1);
             // 缓冲区重要属性： position limit capacity
             intBuffer.put(j); // put:数据写入缓冲区
-
         }
         intBuffer.flip();
         while (intBuffer.hasRemaining()){
@@ -22,5 +21,4 @@ public  class Test  {
             System.out.print(j + "   ");
         }
     }
-
 }
