@@ -1,7 +1,5 @@
 package sunday;
 
-import sun.corba.Bridge;
-
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -13,7 +11,7 @@ public class StreamDemo1 {
 //        Stream<Integer> generate = Stream.generate(()-> 2);
 //        generate.forEach(System.out::println);
         System.out.println("------------分割线----------");
-        Stream<Integer> iterate = Stream.iterate(5,e -> e+5);
+        Stream<Integer> iterate = Stream.iterate(5, e -> e + 5);
         iterate.limit(5).forEach(System.out::println);
         String str = "entaongg";
         IntStream chars = str.chars();

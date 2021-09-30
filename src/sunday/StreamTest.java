@@ -20,19 +20,19 @@ public class StreamTest {
         Double[] d = {3.2, 5.1, 99.9,};
         Stream<Double> stream = Stream.of(d);
         stream.forEach(System.out::println);
-        Float[] f = {3.2f,14.6f,67.5f};
+        Float[] f = {3.2f, 14.6f, 67.5f};
         Stream<Float> f1 = Stream.of(f);
         f1.forEach(System.out::println);
         System.out.println("--------------");
-        Character[] c= {'c','x'};
+        Character[] c = {'c', 'x'};
         Stream<Character> c1 = Stream.of(c);
         c1.forEach(System.out::println);
         System.out.println("-----------");
-        Short[] shorts ={3,5,6,7,8};
+        Short[] shorts = {3, 5, 6, 7, 8};
         Stream<Short> shorts1 = Stream.of(shorts);
         shorts1.forEach(System.out::println);
         System.out.println("-=-----------");
-        Boolean[] booleans = {false,true,};
+        Boolean[] booleans = {false, true,};
         Stream<Boolean> booleans1 = Stream.of(booleans);
         booleans1.forEach(System.out::println);
     }

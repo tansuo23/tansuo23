@@ -2,15 +2,14 @@ package sunday;
 
 public class HeedCrow {
     public static void main(String[] args) {
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("能力");
-            }
-        };
-        runnable.run();
-        Runnable runnable1 = ()-> System.out.println("简易");
-        runnable1.run();
+//        int[] arr = {5, 3, 6, 2, 9, 4, 7};
+//        Socket client = new Socket();
+        System.out.println("tansuo.com");
+        System.out.println("2>>>"+String.class.getClassLoader());
+
+
+
     }
+
 
 }

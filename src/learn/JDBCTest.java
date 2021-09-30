@@ -1,7 +1,9 @@
 package learn;
 
-import javax.sound.midi.Soundbank;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 /**
  * @Author jinglong
@@ -19,7 +21,7 @@ public class JDBCTest {
         Statement statement = connection.createStatement();
         // 执行sql
         ResultSet resultSet = statement.executeQuery(sql);
-        while (resultSet.next()){
+        while (resultSet.next()) {
             int anInt = resultSet.getInt(1);
             System.out.println("------------");
             System.out.println(anInt);

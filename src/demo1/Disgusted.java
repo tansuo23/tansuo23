@@ -7,14 +7,15 @@ package demo1;
  */
 public class Disgusted {
     public static void main(String[] args) {
-        int fun = fun(31);
+        int fun = fun(5);
         System.out.println(fun);
 
     }
-    public static int fun(int num){
+
+    public static int fun(int num) {
         int reult = 1;
-        if(num > 1)
-        reult = num * fun(num - 1);
+        if (num > 1)
+            reult = num * fun(num - 1);
         return reult;
 
     }
