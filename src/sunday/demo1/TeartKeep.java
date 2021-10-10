@@ -1,6 +1,5 @@
 package sunday.demo1;
 
-import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.stream.Stream;
 
 /**
@@ -19,6 +18,8 @@ public class TeartKeep {
         System.out.println("--------------");
         Stream<Integer> gt = Stream.iterate(1, e -> e + 5);
         gt.limit(50).forEach(System.out::println);
+
+
 
     }
 }

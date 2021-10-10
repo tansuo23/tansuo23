@@ -1,20 +1,23 @@
 package deomo2;
 
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
+import java.util.concurrent.*;
 
 public class Start {
-    public static void main(String[] args) throws IOException {
-        ServerSocket socket = new ServerSocket(88);
-        while (true){
-            Socket commit = socket.accept();
-        head(commit);
+    ExecutorService service = Executors.newFixedThreadPool(5);
+    ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newSingleThreadExecutor();
+    AbstractExecutorService executorService = (AbstractExecutorService) Executors.defaultThreadFactory();
+    public class Loadfile implements Callable<String>{
+        private final  String fileName;
+        public Loadfile(String fileName){
+            this.fileName = fileName;
         }
-
+        @Override
+        public String call() throws Exception {
+            return " ";
+        }
     }
-    private static void  head(Socket com){ ;
+    public static void main(String[] args){
 
     }
 }
